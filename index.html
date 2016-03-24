@@ -1,5 +1,6 @@
 <html>
   <head>
+    <title>Find and add roadside stalls and stands</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -15,21 +16,49 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div>
-
+    <div class="container" style="padding: 0px">
+      <div style="height: 213px; position: relative; padding: 0px" class="col-xs-12 col-md-7">
+        <img src="images/top-image-640.jpg" style="height: 100%; position: absolute; top: 0px;" />
+        <img src="images/top-image-2060.jpg" style="height: 100%; position: absolute; top: 0px;" />
+        <p style="position: absolute; top: 0px; color: #C0EE91; padding: 10px; font-size: 50px;">Roadside Stalls<p>
+      </div>
+      <div class="col-xs-12 col-md-5" style="padding: 10px">
+        Find nearby roadside stalls and stands selling fruit, vegetables, trinkets, antiques and whatever else these marvelous entrepreneurs might have on offer. If you come across a stall that isn't on here yet, be sure to add it for more to find and support.
+      </div>
       <!-- Nav tabs -->
-      <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#stalls" aria-controls="stalls" role="tab" data-toggle="tab">Nearby stalls</a></li>
-        <li role="presentation"><a href="#add-stall" aria-controls="add stall" role="tab" data-toggle="tab">Add Stall</a></li>
-      </ul>
+      <div class="col-xs-12 col-md-12" style="padding: 0px">
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#stalls" aria-controls="stalls" role="tab" data-toggle="tab">Nearby stalls</a></li>
+          <li role="presentation"><a href="#add-stall" aria-controls="add stall" role="tab" data-toggle="tab">Add Stall</a></li>
+          <li role="presentation"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">About</a></li>
+        </ul>
 
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="stalls">
-          <iframe src="https://kc.kobotoolbox.org/jbothma/forms/roadside-stalls/map" width="100%" height="600px"></iframe>
-        </div>
-        <div role="tabpanel" class="tab-pane" id="add-stall">
-          <iframe src="https://kc.kobotoolbox.org/jbothma/forms/roadside-stalls/enter-data" width="100%" height="600px"></iframe>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="stalls">
+            <iframe src="https://kc.kobotoolbox.org/jbothma/forms/roadside-stalls/map" width="100%" height="100%"></iframe>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="add-stall">
+            <iframe src="https://kc.kobotoolbox.org/jbothma/forms/roadside-stalls/enter-data" width="100%" height="100%"></iframe>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="about" style="padding: 10px">
+            <p>Add and find nearby roadside stalls.</p>
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+              fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));</script>
+            <p>
+              <div class="fb-share-button" data-href="http://roadside-stalls.github.io/" data-layout="button_count"></div>
+              <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://roadside-stalls.github.io/" data-via="jdbothma">Tweet</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </p>
+            <p>Feedback and improvements welcome at <a href="https://github.com/roadside-stalls/roadside-stalls.github.io/issues"><img src="images/github.png" alt="GitHub" style="height: 25px"></a></p>
+            <p>Title image adapted from <a href="https://www.flickr.com/photos/pelican/9942620753/in/photolist-g9AwKK-qq5YrQ-qTjsAa-pm5nCu-ito7Zf-oXTvBs-jez55u-oSQZSw-oQTU7Q-p9fySV-d3vMxU-pdB1ZW-pfvdNb-jeyron-pfxgwB-7DcqFV-9fe6C1-oQUMkw-pbBrpZ-pbLUW1-oS1Jn8-p8egfU-oYaL8Y-pf55Ga-oY68vu-5RqAad-oSM23T-p5sq3X-pfgneB-p7u5xY-paejJG-oY5RKR-oY66Wq-oUiyiV-ito7tL-73dSVc-odTfvJ-d3vNps-pb6fuc-pf7BBT-7Fmfwn-oXUaiC-p9d1rM-p7qS8U-pkQY2g-p5rfUR-p8rNBX-oY9PCM-p6nrzN-p8boiH/">pelican</a> licensed <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p>
+          </div>
         </div>
       </div>
     </div>
@@ -38,6 +67,14 @@
         e.preventDefault()
         $(this).tab('show')
       })
+
+      function setTabPanelHeight() {
+        console.log($(window).attr('innerHeight'));
+        $(".tab-pane").height($(window).attr('innerHeight') - $('.nav').height());
+      }
+
+      $( window ).resize(setTabPanelHeight);
+      setTabPanelHeight();
     </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
